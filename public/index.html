@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador Imágenes Con Pixabay</title>
+    <link rel="stylesheet" href="../src/style.css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Buscador de Imágenes Pixabay</h1>
+      <div>
+        <form id="formulario" class="contenedor-form">
+          <div class="contenedor-input">
+            <label>Término Búsqueda</label>
+            <input
+              type="text"
+              id="termino"
+              class="inputF"
+              placeholder="Término de búsqueda. Ejemplo: Café o Futbol"
+            />
+            <input type="submit" class="btnBuscar" value="Buscar Imágenes" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <div id="resultado" class="contenedor-resultado"></div>
+    <div id="paginacion" class="contenedor-paginacion"></div>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
