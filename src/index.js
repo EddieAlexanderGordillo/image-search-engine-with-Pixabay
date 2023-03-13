@@ -40,13 +40,7 @@ async function buscarImagenes() {
   const termino = document.querySelector('#termino').value;
   const key = '34242519-8750e7dc97091d192b31e81bc';
   const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=${registroPorPagina}&page=${paginaActual}`;
-  // fetch(url)
-  //   .then((respuesta) => respuesta.json())
-  //   .then((resultado) => {
-  //     console.log(resultado.hits);
-  //     totalPaginas = calcularPaginas(resultado.totalHits);
-  //     mostrarImagenes(resultado.hits);
-  //   });
+
   try {
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
